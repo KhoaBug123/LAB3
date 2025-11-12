@@ -1,0 +1,43 @@
+#root { /* Vùng mount ứng dụng React */
+  margin: 0; /* Xóa margin mặc định */
+  padding: 0; /* Xóa padding mặc định */
+  text-align: center; /* Căn giữa text theo chiều ngang */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  min-height: 100vh; /* Tối thiểu chiều cao bằng viewport */
+}
+
+.logo { /* Ảnh logo chung */
+  height: 6em; /* Chiều cao logo */
+  padding: 1.5em; /* Khoảng đệm xung quanh */
+  will-change: filter; /* Tối ưu hiệu ứng filter */
+  transition: filter 300ms; /* Thời gian chuyển đổi filter */
+}
+.logo:hover { /* Hiệu ứng đổ bóng khi hover */
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover { /* Màu đổ bóng riêng cho logo React */
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin { /* Animation quay logo */
+  from {
+    transform: rotate(0deg); /* Bắt đầu không xoay */
+  }
+  to {
+    transform: rotate(360deg); /* Kết thúc 1 vòng */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) { /* Chỉ bật animation nếu người dùng không giảm chuyển động */
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Quay vô hạn 20s/vòng */
+  }
+}
+
+.card { /* Style chung cho thẻ card */
+  padding: 2em; /* Đệm bên trong */
+}
+
+.read-the-docs { /* Style cho phần đọc tài liệu */
+  color: #888; /* Màu chữ xám */
+}

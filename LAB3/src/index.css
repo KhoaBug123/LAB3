@@ -1,0 +1,29 @@
+* { /* Reset cơ bản cho toàn bộ phần tử */
+  margin: 0; /* Xóa margin mặc định */
+  padding: 0; /* Xóa padding mặc định */
+  box-sizing: border-box; /* Tính kích thước phần tử gồm cả border & padding */
+}
+
+:root { /* Biến và cấu hình mặc định của tài liệu */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* Phông chữ mặc định */
+  line-height: 1.5; /* Chiều cao dòng */
+  font-weight: 400; /* Độ đậm chữ */
+  
+  font-synthesis: none; /* Không tự tổng hợp kiểu chữ */
+  text-rendering: optimizeLegibility; /* Tối ưu hiển thị chữ */
+  -webkit-font-smoothing: antialiased; /* Mượt chữ trên WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Mượt chữ trên macOS */
+}
+
+body { /* Thiết lập nền và kích thước cho body */
+  margin: 0; /* Xóa margin */
+  padding: 0; /* Xóa padding */
+  min-height: 100vh; /* Tối thiểu bằng chiều cao màn hình */
+  width: 100%; /* Chiều rộng toàn phần */
+  background-color: #2b3035; /* Màu nền tối */
+}
+
+#root { /* Vùng mount React */
+  min-height: 100vh; /* Bảo đảm tối thiểu full chiều cao */
+  width: 100%; /* Full chiều rộng */
+}
